@@ -5,7 +5,7 @@ let url = process.env.REACT_APP_API_BASE_URL
 console.log(url);
 // url = url.replace(/";/, '')
 const getHeaders = () => {
-    let headers = { Authorization: `Bearer ${JSON.parse(localStorage.getItem('Y_TOKEN'))}` }
+    let headers = { Authorization: `Bearer ${JSON.parse(localStorage.getItem('Y_TOKEN'))}`}
     console.log(headers);
     return headers;
 }
@@ -24,7 +24,7 @@ export const fetchRequestById = createAsyncThunk("request/getAPIById", async (id
 let headers = getHeaders();
 //     const response = await axios.get(`${url}`);
 //     return response.data;    
-// });
+// });  
 
 export const saveNewRequest = createAsyncThunk(
     "request/createAPI",
