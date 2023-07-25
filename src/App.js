@@ -18,4 +18,7 @@ const App = () => (
     </ThemeCustomization>
 );
 
+// Set default headers for Axios to handle CORS
+axios.defaults.headers.common['Access-Control-Allow-Origin'] = '*';
+
 export default App;
