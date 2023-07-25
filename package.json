@@ -62,7 +62,6 @@
         "eject": "react-scripts eject"
         
     },
-  "proxy":"https://03f0-103-204-189-64.ngrok-free.app",
     "eslintConfig": {
         "extends": [
             "react-app",
